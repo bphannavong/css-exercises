@@ -5,7 +5,6 @@
 
 .container {
   display: grid;
-  grid-template-rows: 100px 50px 1fr 50px;
   grid-template-columns: 1fr 4fr;
   text-align: center;
   gap: 4px;
@@ -32,11 +31,12 @@
 }
 
 .logo {
-  align-self: center;
+  justify-self: start;
   grid-column: 1;
 }
 
 .menu {
+  align-self: center;
   grid-column: 3;
 }
 
@@ -87,7 +87,6 @@
 
 .nav {
   grid-area: nav;
-  
   background-color: #FF7755;
 }
 
@@ -129,6 +128,7 @@
   color: black;
   font-weight: normal;
   font-size: 14px;
+  padding: 5px;
 }
 
 .card .title {
